@@ -1,6 +1,6 @@
 {
     "name": "My Progressive Web App",
-    "short_name": "MyPWA",
+    "short_name": "My_PWA",
     "description": "An example of a Progressive Web App",
     "start_url": "./index.html",
     "display": "standalone",
