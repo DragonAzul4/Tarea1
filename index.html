@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout Básico</title>
+    <script src="https://kit.fontawesome.com/7701936d8f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+
+<!--Metas Etiquetas-->
+<!--Color de la Aplicación-->
+<meta name="Theme color" content="#E8D758"/>
+
+<!--Optimizacion para el móvil-->
+<meta name="MobileOptimized" content="width"/>
+<meta name="HandheldFriendly" content="true"/>
+<meta name="movil-web-app-capable" content="yes"/>
+
+<!--Meta Etiqueta PWA para Apple-->
+<meta name="apple-movil-web-app-capable" content="yes"/>
+<meta name="apple-movil-web-app-status-bar-style" content="Black-Transluced"/>
+<link rel="apple-touch-icon" href="img/icono.png"/>
+<link rel="apple-touch-startup-image" href="img/icono.png"/>
+
+<!--Configuración General de PWA cargar el Manifiesto-->
+<link rel="manifest" href="/manifest.json"/>
+
+<body>
+    <header class="header">
+        <h1>Diego Castillo Campuzano</h1>
+        <img src="img/perfil.png" class="imagen-redonda">
+        <nav class="nav">
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#sobre-mi">Sobre mí</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+        <script scr="./main.js"></script>
+    </header>
+    <main class="main">
+        <section id="inicio" class="section">
+            <h2>Bienvenido</h2>
+            <p>Esta es mi página web personal donde muestro mi experiencia y proyectos.</p>
+        </section>
+        <section id="sobre-mi" class="section">
+            <h2>Sobre mí <i class="fa-solid fa-user"></i></h2>
+            <p>Técnico Superior Universitario en Tecnologías de la Información con experiencia en 
+                desarrollo y gestión de aplicaciones para control de inventarios, incluyendo altas, bajas, 
+                actualizaciones y búsquedas en bases de datos, cursando el décimo cuatrimestre en 
+                ingeniería en desarrollo y gestion de software  poseo conocimientos en Java, C++, Visual 
+                Studio, Visual Studio Code y Adobe Illustrator. Busco iniciar mi carrera profesional 
+                como ingeniero  siendo desarrollador junior para aprender sobre la industria, mejorar 
+                habilidades técnicas y alcanzar roles de liderazgo. Me destaco por mi rápida capacidad de 
+                aprendizaje, adaptabilidad y compromiso con la mejora continua, tanto individualmente 
+                como en equipo.</p>
+        </section>
+        <section id="proyectos" class="section">
+            <h2>Experiencia Laboral <i class="fa-solid fa-briefcase"></i></h2>
+            <p>
+                 <ul>
+                    <li>Gestioné procesos de control de calidad en productos, asegurando estándares 
+                        óptimos antes de la distribución.</li>
+                     <li>Brindé atención al cliente, resolviendo consultas y asegurando una experiencia positiva.</li>
+                     <li>Operé la aplicación web interna para gestionar inventarios, incluyendo la transferencia de mercancía entre almacenes, búsquedas por código de piezas y 
+                        generación de reportes de inventario.</li>
+                     <li>Automatizaba procesos de alta y actualización de existencias diarias, optimizando la precisión en el manejo de datos.</li>
+                 </ul>
+            </p>
+        </section>
+        <section id="formulario" class="section">
+            <h2>¿Quieres saber más?</h2>
+            <form action="#" method="post" class="form">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" placeholder="Escribe tu nombre" required>
+                
+                <label for="message">Mensaje:</label>
+                <textarea id="message" name="message" placeholder="Escribe tu mensaje aquí..." rows="5" required></textarea>
+                
+                <button type="submit">Mandar Mensaje</button>
+            </form>
+        </section>
+    </main>
+    <footer class="footer">
+        <p>&copy; 2025 Diego Castillo Campuzano. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
